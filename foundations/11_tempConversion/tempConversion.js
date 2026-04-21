@@ -1,18 +1,11 @@
-/* 
-0C = 32F
-1C = 1.8F
-FUNCTION convert to celsius
-
-
-FUNCTION convert fahrenheit
-rounded numbers. 37.8 instead of 37.7778 
-*/
-
-const convertToCelsius = function() {
+const convertToFahrenheit = function(degree) {
+  return Math.round((degree * 1.8 + 32) * 10) / 10
 };
 
-const convertToFahrenheit = function() {
+const convertToCelsius = function(degree) {
+  return Math.round((degree - 32) *  5 / 9 * 10) / 10
 };
+
 // Do not edit below this line
 module.exports = {
   convertToCelsius,
